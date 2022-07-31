@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 
-const ToggleSwitch =({colorOff,colorOn,accion,feagre}) => {
+const ToggleSwitch =({colorOff,colorOn,accion}) => {
   const [isToggle, setIsToggle] = useState(false)
 
   const clickHandler= () => {
@@ -9,8 +9,8 @@ const ToggleSwitch =({colorOff,colorOn,accion,feagre}) => {
   }  
   
   return (
-    <div  className="caja-switch">
-          <label>mostrar importantes</label>
+    <div  className="caja-switch Notas">
+          <label className='Boton-Blanco'>mostrar importantes</label>
           <label className="switch"> 
             <input type="checkbox" onClick={clickHandler} checked={isToggle}></input>
             <span style={{backgroundColor: isToggle ? colorOn : colorOff }} className="slider round"  ></span>

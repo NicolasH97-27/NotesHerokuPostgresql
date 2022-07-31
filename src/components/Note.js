@@ -1,7 +1,8 @@
 const Note = ({ note }) => {
   
-    return  (<li>
-    {note.content} 
+    return  (
+    <li className="note">
+    <span>{note.content}</span> 
     
   </li>)
   

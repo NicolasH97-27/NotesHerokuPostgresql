@@ -1,6 +1,7 @@
-body{
+ body{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgeN696FZAxNniKGJ6fdMosF815pWjVsLTCQ&usqp=CAU");
-}
+} 
+
 /* Notas */
 .Notas div{
 	display: flex;
@@ -81,7 +82,7 @@ form button:hover{
 /* complicado css de una parte del form */
 .caja-switch{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -149,9 +150,15 @@ form button:hover{
 
   /* error Message */
 
-  .error{
+  .inicio{
 	color: #ccc;
 	text-indent: 86px;
 	margin-top: 1%;
   }
+
+/* boton login */
+
+.Boton-Blanco{
+	color: #ccc;
+}
 

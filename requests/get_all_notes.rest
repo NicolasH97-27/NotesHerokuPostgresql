@@ -1,7 +1,7 @@
 Get http://localhost:3001/api/persons
 
 ###
-Get http://localhost:3001/api/persons/1
+Get http://localhost:3001/api/login
 
 ###
 
@@ -18,3 +18,48 @@ Content-Type: application/json
   "date": "2022-01-10T17:30:31.098Z",
   "important": true
 }
+
+###
+
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "nicolas",
+  "password": "123123"
+}
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "nicolas",
+  "password": "123123",
+  "name":"Nicolas Hurtado"
+}
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "laucha",
+  "password": "123123",
+  "name":"Lautaro Bermejo"
+}
+
+###
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5c2VybmFtZSI6Im1sdXVra2FpIiwiaW
+
+
+{
+  "id": 5,
+  "content": "HTgrhrhrh    rghrhr  hrhr   easy",
+  "date": "2022-01-10T17:30:31.098Z",
+  "important": true
+}
+###
